@@ -516,9 +516,8 @@
 			background: #df7366;
 			color: #fff;
 			text-align: center;
-			border-radius: 0.5em;
+			border-radius: 0.1em;
 			text-decoration: none;
-			padding: 0.65em 3em 0.65em 3em;
 			border: 0;
 			cursor: pointer;
 			outline: 0;
@@ -600,10 +599,9 @@
 			display: inline-block;
 			background: #2b252c;
 			color: #fff;
-			border-radius: 100%;
+			/* border-radius: 100%; */
 			width: 3.5em;
 			height: 3.5em;
-			line-height: 3.5em;
 			text-align: center;
 			font-size: 1em;
 		}
@@ -1054,10 +1052,11 @@
 	#header
 	{
 		position: relative;
-		background-image: url('../images/header.jpg');
+		/*background-image: url('../images/header.jpg');
 		background-size: cover;
 		background-position: center center;
-		background-attachment: fixed;
+		background-attachment: fixed;*/
+        background: #000;
 		color: #fff;
 		text-align: center;
 		padding: 2.5em 0 2em 0;
@@ -1072,7 +1071,7 @@
 			.homepage #header .overlay
 			{
 				content: '';
-				background: #1C0920;
+				background: #000;
 				display: block;
 				position: absolute;
 				left: 0;
@@ -1125,13 +1124,10 @@
 		
 		#header .button
 		{
-			border-radius: 100%;
 			width: 4.5em;
-			height: 4.5em;
-			line-height: 4.5em;
 			text-align: center;
 			font-size: 1.25em;
-			padding: 0;
+			padding: .5em;
 		}
 		
 		#header header
