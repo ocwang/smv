@@ -1,0 +1,109 @@
+/*
+--------------------------------------------------------------
+General
+--------------------------------------------------------------
+*/
+
+section {
+  margin-bottom: 0;
+  padding: 60px 0 60px 0;
+}
+
+/*
+--------------------------------------------------------------
+Research
+--------------------------------------------------------------
+*/
+
+/*
+--------------------------------------------------------------
+Research Splash
+--------------------------------------------------------------
+*/
+
+#research-splash {
+  background-image: url('../images/header.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+
+#research-splash h1,
+#research-splash h3 {
+  color: #000;
+}
+
+/*
+--------------------------------------------------------------
+People
+--------------------------------------------------------------
+*/
+
+/*
+--------------------------------------------------------------
+People Splash
+--------------------------------------------------------------
+*/
+
+#people-splash {
+  background-image: url('../images/header.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+
+#people-splash h1,
+#people-splash h3 {
+  color: #000;
+}
+
+/*
+--------------------------------------------------------------
+Contact
+--------------------------------------------------------------
+*/
+
+/*
+--------------------------------------------------------------
+Contact Splash
+--------------------------------------------------------------
+*/
+
+#contact-splash {
+  background-image: url('../images/header.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+
+#contact-splash h1,
+#contact-splash h3 {
+  color: #000;
+}
+
+/*
+--------------------------------------------------------------
+Misc
+--------------------------------------------------------------
+*/
+
+.placeholder {
+  border: 2px dashed #000000;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
