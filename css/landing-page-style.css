@@ -12,6 +12,16 @@ section {
   padding: 60px 0 60px 0;
 }
 
+.container-splash {
+  padding: 120px 0 120px 0 !important;
+}
+
+.container-splash h2,
+.container-splash h3 {
+  color: #ffffff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
 /*
 --------------------------------------------------------------
 Research
@@ -25,19 +35,9 @@ Research Splash
 */
 
 #research-splash {
-  background-image: url('../images/header.jpg');
-  background-position: center center;
+  background: url('../images/pic06.jpg') 50% 0 fixed;
   background-size: cover;
-  background-repeat: no-repeat;
-  height: 350px;
 }
-
-#research-splash h1,
-#research-splash h3 {
-  color: #000;
-}
-
-
 
 /*
 --------------------------------------------------------------
@@ -46,16 +46,8 @@ People Splash
 */
 
 #people-splash {
-  background-image: url('../images/header.jpg');
-  background-position: center center;
+  background: url('../images/pic06.jpg') 50% 0 fixed;
   background-size: cover;
-  background-repeat: no-repeat;
-  height: 350px;
-}
-
-#people-splash h1,
-#people-splash h3 {
-  color: #000;
 }
 
 /*
@@ -78,16 +70,8 @@ Contact Splash
 */
 
 #contact-splash {
-  background-image: url('../images/header.jpg');
-  background-position: center center;
+  background: url('../images/pic06.jpg') 50% 0 fixed;
   background-size: cover;
-  background-repeat: no-repeat;
-  height: 350px;
-}
-
-#contact-splash h1,
-#contact-splash h3 {
-  color: #000;
 }
 
 /*
