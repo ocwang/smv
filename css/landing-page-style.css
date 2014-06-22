@@ -43,7 +43,7 @@ Nav Affix
   color: #ffffff;
 }
 
-.affix {
+#nav-affix.affix {
   position: fixed;
   top: 0;
   width: 100%;
