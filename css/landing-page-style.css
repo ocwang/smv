@@ -34,7 +34,7 @@ Nav Affix
 */
 
 #nav-affix {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
 }
 
@@ -72,10 +72,15 @@ Research Splash
 */
 
 #research-splash {
-  background: url('../images/pic06.jpg') 50% 0 fixed;
+  background: url('../images/research-splash.jpg') 50% 0 fixed;
   background-size: cover;
 }
 
+#research-splash > .container-splash h2,
+#research-splash > .container-splash h3 {
+  color: #000000;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
 
 
 /*
@@ -85,7 +90,7 @@ People Splash
 */
 
 #people-splash {
-  background: url('../images/pic06.jpg') 50% 0 fixed;
+  background: url('../images/people-splash.jpg') 50% 0 fixed;
   background-size: cover;
 }
 
@@ -109,7 +114,7 @@ Contact Splash
 */
 
 #contact-splash {
-  background: url('../images/pic06.jpg') 50% 0 fixed;
+  background: url('../images/contact-splash.jpg') 50% 0 fixed;
   background-size: cover;
 }
 
