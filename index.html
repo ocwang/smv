@@ -55,8 +55,7 @@
 		</div>
 
     <!-- Nav Affix -->
-    <!-- TODO: Need to figure how to deal with dynamic heights -->
-    <section id="nav-affix" data-spy="affix" data-offset-top="841" class="text-center placeholder">
+    <section id="nav-affix" data-spy="affix" class="text-center placeholder">
       <h3>Navigation Affix</h3>
     </section>
 
@@ -275,14 +274,15 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/smoothscroll.js"></script>
 
-<!--
-      NOTE: Used to dynamically calculate height of affix-top position
+
+    <!-- Used to dynamically calculate height of affix-top position -->
+    <script>
       $('#nav-affix').affix({
         offset: {
-          top: $('header').height()
+          top: $(window).height()
         }
       });
--->
+    </script>
 
 	</body>
 </html>
