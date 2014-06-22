@@ -274,15 +274,16 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/smoothscroll.js"></script>
 
-
-    <!-- Used to dynamically calculate height of affix-top position -->
     <script>
-      $('#nav-affix').affix({
-        offset: {
-          top: $(window).height()
-        }
-      });
+       $(function() {
+           $(window).scroll(function() {
+               if($(window).scrollTop() >= $(window).height()) {
+                   $('#nav-affix').fadeIn('slow');
+               }else{
+                   $('#nav-affix').fadeOut('fast');
+               }
+           });
+       });
     </script>
-
 	</body>
 </html>
