@@ -28,7 +28,7 @@
 
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 	</head>
-	<body class="homepage">
+	<body data-spy="scroll" data-target="#nav-affix" class="homepage">
 
 		<!-- Header -->
 		<div id="header">
@@ -55,8 +55,16 @@
 		</div>
 
     <!-- Nav Affix -->
-    <section id="nav-affix" data-spy="affix" class="text-center placeholder">
-      <h3>Navigation Affix</h3>
+    <section id="nav-affix" data-spy="affix" class="clearfix">
+      <div id="affix-logo" class="pull-left">
+        <h3>Strategic Motion Video</h3>
+      </div>
+      <ul id="scrollspy" class="pull-right">
+        <li><a href="#idea">The Idea</a></li>
+        <li><a href="#research">The Research</a></li>
+        <li><a href="#people">The People</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
     </section>
 
     <!-- The Idea -->
@@ -215,7 +223,7 @@
           <div class="row">
             <div class="12u text-center">
               <h2>Contact Us</h2>
-              <!-- <h3>Get in touch</h3> -->
+              <h3>Get in touch</h3>
             </div>
           </div>
         </div>
