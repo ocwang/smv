@@ -45,7 +45,7 @@ section > .section-heading {
 }
 
 section > .section-heading > .container {
-	padding: 25px 0 70px 0;
+	padding: 120px 0 70px 0;
 }
 
 section > .section-heading h1 {
@@ -70,7 +70,6 @@ Splash
 
 #splash {
 	width: 100%;
-	height: 100vh;
 }
 
 /*
@@ -176,6 +175,15 @@ The Idea
 
 #idea .container>#smv-video.row {
 	margin-top: 30px;
+}
+
+#smv-video source {
+    max-width:100%;
+    height: auto;
+}
+
+#smv-video > div {
+    padding: 0;
 }
 
 /*
