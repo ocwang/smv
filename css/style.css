@@ -260,9 +260,24 @@ The Idea
 --------------------------------------------------------------
 */
 
+.feature {
+	/*border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;*/
 
-#idea #idea-details p {
-	font-size: 20px;
+	padding: 3px 10px;
+
+	transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+}
+
+.feature p {
+	font-size: 22px;
 }
 
 #idea .container>#smv-video.row {
