@@ -14,6 +14,30 @@ body {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
+.container {
+		padding: 15px 0 7px 0;
+}
+
+section {
+	border-bottom: 12px solid #1c1c1d;
+}
+
+@media (min-width: 768px) {
+	.container {
+		padding: 20px 0 90px 0;
+	}
+
+	section {
+		border-bottom: 20px solid #1c1c1d;
+	}
+}
+
+.container>.row {
+	margin: 15px 0 15px 0;
+}
+
+
+
 section p {
 	margin: 5px 0 10px 0;
 	font-weight: 300;
@@ -22,15 +46,6 @@ section p {
 section img {
 	display: block;
 	margin: 0 auto;
-}
-
-/*TODO: Make padding scale with screen size*/
-.container {
-	padding: 20px 0 90px 0;
-}
-
-.container>.row {
-	margin: 15px 0 15px 0;
 }
 
 /*
@@ -42,25 +57,45 @@ Section Headings
 section > .section-heading {
 	background-color: #af0606;
 	color: #ffffff;
+	text-align: center;
 }
 
 section > .section-heading > .container {
-	padding: 120px 0 70px 0;
+		padding: 40px 0 40px 0;
 }
 
 section > .section-heading h1 {
-	font-size: 80px;
+	font-size: 58px;
+	margin-bottom: 5px;
 	text-shadow: rgba(0, 0, 0, 0.1);
-	margin-bottom: 0;
 }
 
-section > .section-heading p {
-	font-size: 26px;
+section > .section-heading > .container p {
+	font-size: 20px;
 	color: #FFCCCB;
 	margin-top: 0;
-	padding-left: 5px;
 }
 
+@media (min-width: 768px) {
+	section > .section-heading {
+		text-align: left;
+	}
+
+	section > .section-heading h1 {
+		font-size: 86px;
+		text-shadow: rgba(0, 0, 0, 0.1);
+		margin-bottom: 0;
+	}
+
+	section > .section-heading > .container {
+		padding: 100px 0 70px 0;
+	}
+
+	section > .section-heading > .container p {
+		font-size: 28px;
+		padding-left: 5px;
+	}
+}
 
 /*
 --------------------------------------------------------------
@@ -69,7 +104,59 @@ Splash
 */
 
 #splash {
+	border-top: 7px solid #af0606;
 	width: 100%;
+	background-color: #ffffff;
+	border-bottom: 0;
+}
+
+#splash h2 strong {
+	color: #af0606;
+}
+
+#splash > .container-fluid > .row > #play {
+	margin-top: 28px;
+}
+
+#splash h1 {
+	margin: 80px 0 5px 0;
+	font-size: 58px;
+}
+
+#splash h2 {
+	margin: 5px 0 5px 0;
+	font-size: 32px;
+}
+
+@media (min-width: 768px) {
+	#splash h1 {
+		margin-top: 70px;
+		font-size: 72px;
+	}
+
+	#splash h2 {
+		margin-top: 10px;
+		font-size: 46px;
+	}
+
+	#splash > .container-fluid > .row > #play {
+		margin-top: 42px;
+	}
+}
+
+@media (min-width: 992px) {
+	#splash h1 {
+		margin-top: 110px;
+		font-size: 100px;
+	}
+
+	#splash h2 {
+		font-size: 64px;
+	}
+
+	#splash > .container-fluid > .row > #play {
+		margin-top: 54px;
+	}
 }
 
 /*
@@ -80,12 +167,13 @@ Nav Affix
 
 #nav-affix {
 	color: #000000;
-	top: -70px;
+	top: -60px;
 	width: 100%;
+	border-bottom: 0;
 }
 
 .navbar-default {
-	background-color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.97);
 	border: 0;
 }
 
@@ -94,24 +182,28 @@ Nav Affix
 	width: 100%;
 	position: fixed;
 	z-index: 999;
-	
+
 	/* light box shadow for nav-affix */
 	-webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
 	-moz-box-shadow:    0px 3px 5px 0px rgba(0, 0, 0, 0.3);
 	box-shadow:         0px 3px 5px 0px rgba(0, 0, 0, 0.3);
-	
-	/* nav-affix fade-in from top transition once affix offset is reached */
-	transition: top 1s;
-	-moz-transition: top 1s;
-	-o-transition: top 1s;
+}
+
+@media (min-width: 768px) {
+	#nav-affix.affix {
+		/* nav-affix fade-in from top transition once affix offset is reached */
+		transition: top 1s;
+		-moz-transition: top 1s;
+		-o-transition: top 1s;
     -webkit-transition: top 1s;
+	}
 }
 
 .navbar {
 	border-radius: 0;
 	margin-bottom: 0;
 	border: 0;
-	min-height: 70px;
+	min-height: 60px;
 }
 
 .navbar-default .navbar-brand {
@@ -119,12 +211,12 @@ Nav Affix
 }
 
 .navbar-brand {
-	padding: 25px 15px 25px 15px;
+	padding: 20px 15px 20px 15px;
 	font-size: 26px;
-	height: 70px;
+	height: 60px;
 }
 
-.navbar-default .navbar-brand:hover, 
+.navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
 	color: #af0606;
 }
@@ -132,20 +224,20 @@ Nav Affix
 .navbar-default .navbar-nav > li > a {
 	color: #000000;
 	font-size: 20px;
-	padding: 25px 15px 25px 15px;
+	padding: 20px 15px 20px 15px;
 	font-weight: 300;
 	border-bottom: 7px solid transparent;
 }
 
 
-.navbar-default .navbar-nav>li>a:hover, 
+.navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
 	color: #af0606;
 }
 
 /* Active effect of scrollspy */
 .navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
 	background-color: transparent;
 	color: #af0606;
@@ -158,8 +250,8 @@ Nav Affix
 	}
 
 .navbar-toggle {
-	margin-top: 21px;
-	margin-bottom: 21px; 
+	margin-top: 13px;
+	margin-bottom: 13px;
 }
 
 /*
@@ -169,7 +261,7 @@ The Idea
 */
 
 
-#idea p {
+#idea #idea-details p {
 	font-size: 20px;
 }
 
@@ -180,10 +272,6 @@ The Idea
 #smv-video source {
     max-width:100%;
     height: auto;
-}
-
-#smv-video > div {
-    padding: 0;
 }
 
 /*
@@ -227,6 +315,7 @@ People Splash
 	background-size: cover;
 }
 
+
 /*
 --------------------------------------------------------------
 The People
@@ -234,16 +323,19 @@ The People
 */
 
 #people-intro {
-	padding: 35px 0 35px 0;
+	padding: 15px;
+}
+
+.person {
+	margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
 }
 
 #people .person-pic img {
 	height: auto;
 	max-width: 100%;
-}
-
-@media (min-width: 768px) {
-
 }
 
 @media (min-width: 992px) {
@@ -257,7 +349,7 @@ The People
 	#people h3 {
 		margin: 0;
 	}
-	#people .person {
+	#people .name {
 		padding: 0;
 	}
 }
@@ -292,7 +384,7 @@ Footer
 */
 footer {
 	/* #af0606, #b9090b */
-	background-color: #af0606;
+	background-color: #1c1c1d;
 	color: #ffffff;
 }
 
@@ -303,11 +395,12 @@ footer>.container {
 footer ul>li>a,
 footer ul>li>a:hover,
 footer ul>li>a:focus {
-	color: #FFCCCB;
+	color: #ffffff;
 }
 
 footer h3 {
 	padding-bottom: 3px;
+	color: #af0606;
 	border-bottom: 1px solid #ffffff;
 }
 
