@@ -289,6 +289,16 @@ The Idea
     height: auto;
 }
 
+#smv-video h1 {
+	padding-left: 8px;
+}
+
+#smv-video h3 {
+	margin: 5px 10px 34px 10px;
+	font-size: 26px;
+	font-weight: 300;
+}
+
 /*
 --------------------------------------------------------------
 Research Splash
