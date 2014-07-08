@@ -12,6 +12,8 @@
     <!-- SMV CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
+    <link rel="stylesheet" type="text/css" href="css/new-splash.css">
+
     <!-- Google Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic" rel="stylesheet">
@@ -24,11 +26,18 @@
     <![endif]-->
   </head>
   <body data-spy="scroll" data-target="#scrollspy">
-    <header class="header" role="banner">
+    <header>
 
     </header>
 
-  	<section id="splash">
+    <section id="new-splash">
+      <div id="splash-inner" class="text-center">
+        <h1>Strategic Motion Video</h1>
+        <h2>When Video <strong>Talks Back</strong></h2>
+      </div>
+    </section>
+
+<!--   	<section id="splash">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12 text-center">
@@ -44,12 +53,11 @@
           </div>
         </div>
       </div>
-  	</section>
+  	</section> -->
 
-  	<section id="nav-affix" data-spy="affix">
+<!--   	<section id="nav-affix" data-spy="affix">
       <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#scrollspy">
               <span class="sr-only">Toggle navigation</span>
@@ -60,7 +68,6 @@
             <a class="navbar-brand" href="#">Insert Logo Here</a>
           </div>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
           <div id="scrollspy" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#idea">The Idea</a></li>
@@ -68,10 +75,10 @@
               <li><a href="#people">The People</a></li>
               <li><a href="#contact">Contact Us</a></li>
             </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+          </div>
+        </div>
       </nav>
-  	</section>
+  	</section> -->
 
     <section id="idea">
       <div class="section-heading">
@@ -92,21 +99,76 @@
         </div>
 
         <div id="smv-video" class="row">
-          <div class="col-md-8 text-center">
+          <div class="col-sm-12 col-md-12 col-lg-8 text-center">
             <video width="100%" height="100%" controls >
               <source src="media/introvid.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
           </div>
-          <div class="col-md-4">
-            <h3><span class="glyphicon glyphicon-facetime-video"></span> &nbsp; Seamless, Dynamic Videos Customized For Each Learner</h3>
-            <!--  <p>All trainings are personalized for each unique learner and dynamically adapt to fit the learner's needs, introducing content where it is most relevant.</p>  -->
-            <h3><span class="glyphicon glyphicon-transfer"></span> &nbsp; Increased User Engagement and Higher Transfer Rates</h3>
-            <!--  <p>Instructors can employ the use of learner questions and assessment questions to engage learners, leading to more engagement and increased content retention rates.</p>  -->
-            <h3><span class="glyphicon glyphicon-stats"></span> &nbsp; Real-time Analytics and Performance Data</h3>
-            <!--  <p>The SMV system offers analytics and performance metrics including real-time statistics on user engagement, transfer rates, and learning assessments. Administrators can view performance data to identify common pain points and increase the effectiveness of trainings. </p>  -->
-            <h3><span class="glyphicon glyphicon-globe"></span> &nbsp; Low-overhead Scalability</h3>
-            <!--  <p>SMV is designed to be infinitely scalable. Simultaneously reach millions of learners without the enormous hassle and cost that come with growth.</p>  -->
+          <div class="col-sm-12 col-md-12 col-lg-4">
+            <div class="panel-group" id="accordion">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <span class="glyphicon glyphicon-facetime-video"></span>
+                    <a data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne">
+                      &nbsp; Seamless, Dynamic Videos Customized For Each Learner
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    <p>All trainings are personalized for each unique learner and dynamically adapt to fit the learner's needs, introducing content where it is most relevant.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <span class="glyphicon glyphicon-transfer"></span>
+                    <a data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo">
+                      &nbsp; Increased User Engagement and Higher Transfer Rates
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>Instructors can employ the use of learner questions and assessment questions to engage learners, leading to more engagement and increased content retention rates.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <span class="glyphicon glyphicon-stats"></span>
+                    <a data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree">
+                      &nbsp; Real-time Analytics and Performance Data
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>The SMV system offers analytics and performance metrics including real-time statistics on user engagement, transfer rates, and learning assessments. Administrators can view performance data to identify common pain points and increase the effectiveness of trainings.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <span class="glyphicon glyphicon-globe"></span>
+                    <a data-toggle="collapse" data-parent="#accordion" data-target="#collapseFour">
+                      &nbsp; Low-overhead Scalability
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>SMV is designed to be infinitely scalable. Simultaneously reach millions of learners without the enormous hassle and cost that come with growth.</p>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- /#accordion -->
+
           </div>
         </div>
       </div>

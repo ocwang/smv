@@ -103,7 +103,7 @@ Splash
 --------------------------------------------------------------
 */
 
-#splash {
+/*#splash {
 	border-top: 7px solid #af0606;
 	width: 100%;
 	background-color: #ffffff;
@@ -157,13 +157,15 @@ Splash
 	#splash > .container-fluid > .row > #play {
 		margin-top: 54px;
 	}
-}
+}*/
 
 /*
 --------------------------------------------------------------
 Nav Affix
 --------------------------------------------------------------
 */
+
+/*
 
 #nav-affix {
 	color: #000000;
@@ -183,22 +185,28 @@ Nav Affix
 	position: fixed;
 	z-index: 999;
 
+*/
+
 	/* light box shadow for nav-affix */
+/*
+
 	-webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
 	-moz-box-shadow:    0px 3px 5px 0px rgba(0, 0, 0, 0.3);
 	box-shadow:         0px 3px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
-@media (min-width: 768px) {
-	#nav-affix.affix {
+*/
+
+/*@media (min-width: 768px) {
+	#nav-affix.affix {*/
 		/* nav-affix fade-in from top transition once affix offset is reached */
-		transition: top 1s;
+/*		transition: top 1s;
 		-moz-transition: top 1s;
 		-o-transition: top 1s;
     -webkit-transition: top 1s;
 	}
-}
-
+}*/
+/*
 .navbar {
 	border-radius: 0;
 	margin-bottom: 0;
@@ -233,10 +241,10 @@ Nav Affix
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
 	color: #af0606;
-}
+}*/
 
 /* Active effect of scrollspy */
-.navbar-default .navbar-nav > .active > a,
+/*.navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
 	background-color: transparent;
@@ -252,7 +260,7 @@ Nav Affix
 .navbar-toggle {
 	margin-top: 13px;
 	margin-bottom: 13px;
-}
+}*/
 
 /*
 --------------------------------------------------------------
@@ -293,10 +301,18 @@ The Idea
 	padding-left: 8px;
 }
 
-#smv-video h3 {
-	margin: 5px 10px 34px 10px;
-	font-size: 26px;
+#smv-video h4 {
+	font-size: 24px;
 	font-weight: 300;
+}
+
+#smv-video a:hover,
+#smv-video a:focus {
+	text-decoration: none;
+}
+
+#smv-video .panel-group {
+	margin-top: 6px;
 }
 
 /*
