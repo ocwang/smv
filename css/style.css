@@ -165,13 +165,18 @@ Nav Affix
 --------------------------------------------------------------
 */
 
-/*
-
-#nav-affix {
+header {
+    position: fixed;
 	color: #000000;
-	top: -60px;
+	top: 0;
 	width: 100%;
 	border-bottom: 0;
+    z-index: 999;
+    
+    /* light box shadow for nav-affix */
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow:    0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+	box-shadow:         0px 3px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-default {
@@ -179,72 +184,47 @@ Nav Affix
 	border: 0;
 }
 
-#nav-affix.affix {
-	top: 0;
-	width: 100%;
-	position: fixed;
-	z-index: 999;
+@media (min-width: 768px) {
 
-*/
+    .navbar {
+        border-radius: 0;
+        margin-bottom: 0;
+        border: 0;
+        min-height: 60px;
+    }
 
-	/* light box shadow for nav-affix */
-/*
+    .navbar-default .navbar-brand {
+        color: #000000;
+    }
 
-	-webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow:    0px 3px 5px 0px rgba(0, 0, 0, 0.3);
-	box-shadow:         0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    .navbar-brand {
+        padding: 20px 15px 20px 15px;
+        font-size: 26px;
+        height: 60px;
+    }
+
+    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-brand:focus {
+        color: #af0606;
+    }
 }
 
-*/
-
-/*@media (min-width: 768px) {
-	#nav-affix.affix {*/
-		/* nav-affix fade-in from top transition once affix offset is reached */
-/*		transition: top 1s;
-		-moz-transition: top 1s;
-		-o-transition: top 1s;
-    -webkit-transition: top 1s;
-	}
-}*/
-/*
-.navbar {
-	border-radius: 0;
-	margin-bottom: 0;
-	border: 0;
-	min-height: 60px;
-}
-
-.navbar-default .navbar-brand {
-	color: #000000;
-}
-
-.navbar-brand {
-	padding: 20px 15px 20px 15px;
-	font-size: 26px;
-	height: 60px;
-}
-
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-	color: #af0606;
-}
 
 .navbar-default .navbar-nav > li > a {
-	color: #000000;
-	font-size: 20px;
-	padding: 20px 15px 20px 15px;
-	font-weight: 300;
-	border-bottom: 7px solid transparent;
+    color: #000000;
+    font-size: 20px;
+    padding: 20px 15px 20px 15px;
+    font-weight: 300;
+    border-bottom: 7px solid transparent;
 }
-
 
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
 	color: #af0606;
-}*/
+}
 
 /* Active effect of scrollspy */
-/*.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
 	background-color: transparent;
@@ -260,7 +240,7 @@ Nav Affix
 .navbar-toggle {
 	margin-top: 13px;
 	margin-bottom: 13px;
-}*/
+}
 
 /*
 --------------------------------------------------------------
