@@ -348,8 +348,9 @@ Research Splash
 #research-splash {
 	width: 100%;
 	padding: 320px 0 0 0;
-	background: url('../img/research-bg.jpg') 50% 0 fixed;
+	background: url('../img/research-bg.jpg') 50% 0 fixed; min-height: 320px;
 	background-size: cover;
+	border-bottom: 0;
 }
 
 /*
@@ -367,6 +368,39 @@ The Research
 	font-size: 16px;
 }
 
+#research .btn {
+	border-radius: 0;
+	color: #ffffff;
+  background-color: #881621;
+  border-color: #881621;
+  font-weight: 300;
+
+  transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+	#research .btn {
+		display: initial;
+	}
+}
+
+
+
+#research .btn:hover,
+#research .btn:focus,
+#research .btn:active,
+#research .btn.active {
+  color: #000;
+  background-color: #fff;
+  border-color: #881621;
+}
+
 /*
 --------------------------------------------------------------
 People Splash
@@ -378,6 +412,7 @@ People Splash
 	padding: 320px 0 0 0;
 	background: url('../img/team-bg.jpg') 50% 0 fixed;
 	background-size: cover;
+	border-bottom: 0;
 }
 
 
@@ -392,10 +427,24 @@ The People
 }
 
 .person {
-	margin-bottom: 20px;
+	margin-bottom: 7px;
+}
+
+#people .name h3 {
+	margin: 0;
 }
 
 @media (min-width: 768px) {
+	.person-pic img {
+		border-radius: 50%;
+	}
+	.person {
+		margin-bottom: 20px;
+	}
+
+	#people .name h3 {
+		margin: 20px 0 10px 0;
+	}
 }
 
 #people .person-pic img {
@@ -411,7 +460,7 @@ The People
 		height: 100px;
 		width: 100px;
 	}
-	#people h3 {
+	#people .name h3 {
 		margin: 0;
 	}
 	#people .name {
@@ -430,6 +479,7 @@ Contact Splash
 	padding: 320px 0 0 0;
 	background: url('../img/raleigh-skyline.jpg') 50% 0 fixed;
 	background-size: cover;
+	border-bottom: 0;
 }
 
 /*
