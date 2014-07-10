@@ -10,12 +10,17 @@ General
 --------------------------------------------------------------
 */
 
+html, body {
+	/* Allows us to use 100% height */
+	height: 100%;
+}
+
 body {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .container {
-		padding: 15px 0 7px 0;
+	padding: 15px 0 7px 0;
 }
 
 section {
@@ -24,7 +29,7 @@ section {
 
 @media (min-width: 768px) {
 	.container {
-		padding: 20px 0 90px 0;
+		padding-bottom: 30px;
 	}
 
 	section {
@@ -32,11 +37,21 @@ section {
 	}
 }
 
+@media (min-width: 992px) {
+	.container {
+		padding-bottom: 60px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		padding-bottom: 70px;
+	}
+}
+
 .container>.row {
 	margin: 15px 0 15px 0;
 }
-
-
 
 section p {
 	margin: 5px 0 10px 0;
@@ -55,13 +70,13 @@ Section Headings
 */
 
 section > .section-heading {
-	background-color: #af0606;
+	background-color: #881621;
 	color: #ffffff;
 	text-align: center;
 }
 
 section > .section-heading > .container {
-		padding: 30px 0 30px 0;
+	padding: 0;
 }
 
 section > .section-heading h1 {
@@ -72,7 +87,7 @@ section > .section-heading h1 {
 
 section > .section-heading > .container p {
 	font-size: 20px;
-	color: #FFCCCB;
+	color: #CDA0A1;
 	margin-top: 0;
 }
 
@@ -84,11 +99,6 @@ section > .section-heading > .container p {
 	section > .section-heading h1 {
 		font-size: 86px;
 		text-shadow: rgba(0, 0, 0, 0.1);
-		margin-bottom: 0;
-	}
-
-	section > .section-heading > .container {
-		padding: 50px 0 70px 0;
 	}
 
 	section > .section-heading > .container p {
@@ -99,23 +109,160 @@ section > .section-heading > .container p {
 
 /*
 --------------------------------------------------------------
+Misc.
+--------------------------------------------------------------
+*/
+
+.splash-anchor {
+	height: 65px;
+	postition: absolute;
+	bottom: 0;
+}
+
+.section-lead p {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+@media (min-width: 768px) {
+	.section-lead p {
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 992px) {
+	.section-lead p {
+		font-size: 28px;
+	}
+}
+
+/*
+--------------------------------------------------------------
+Nav Affix
+--------------------------------------------------------------
+*/
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	border-bottom: 0;
+	z-index: 999;
+
+	transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border: 0;
+}
+
+.navbar {
+	border-radius: 0;
+	margin-bottom: 0;
+	border: 0;
+	min-height: 60px;
+}
+
+.navbar-default .navbar-brand {
+	color: #ffffff;
+}
+
+header.solid-header {
+	background-color: rgba(255, 255, 255, 0.97);
+
+	/* light box shadow for nav-affix - ONLY FOR HEADER */
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow:    0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+	box-shadow:         0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+header.solid-header .navbar-default .navbar-brand,
+header.solid-header .navbar-default .navbar-nav > li > a {
+	color: #000000;
+}
+
+
+.navbar-brand {
+	padding: 20px 15px 20px 15px;
+	font-size: 26px;
+	height: 60px;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #ffffff;
+	font-size: 20px;
+	padding: 20px 15px 20px 15px;
+	font-weight: 300;
+	border-bottom: 5px solid transparent;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+	color: #ffffff;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	background-color: transparent;
+	color: #ffffff;
+
+	transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+}
+
+/* Active effect of scrollspy */
+header.solid-header .navbar-default .navbar-nav > .active > a,
+header.solid-header .navbar-default .navbar-nav > .active > a:hover,
+header.solid-header .navbar-default .navbar-nav > .active > a:focus {
+	background-color: transparent;
+	color: #881621;
+	border-bottom: 5px solid #881621;
+}
+
+.navbar-toggle {
+	margin-top: 13px;
+	margin-bottom: 13px;
+}
+
+/*
+--------------------------------------------------------------
 Splash
 --------------------------------------------------------------
 */
 
-/*#splash {
-	border-top: 7px solid #af0606;
+#splash {
+	height: 100vh;
 	width: 100%;
+
+	background: url('../img/studio.jpg') 50% 0 fixed;
 	background-color: #ffffff;
+	background-size: cover;
+
 	border-bottom: 0;
+
+	display: table;
+}
+
+#splash-inner {
+	display: table-cell;
+	vertical-align: middle;
+	color: #ffffff;
+}
+
+#splash-inner h2 {
 }
 
 #splash h2 strong {
-	color: #af0606;
-}
-
-#splash > .container-fluid > .row > #play {
-	margin-top: 28px;
+	color: #881621;
 }
 
 #splash h1 {
@@ -128,6 +275,7 @@ Splash
 	font-size: 32px;
 }
 
+
 @media (min-width: 768px) {
 	#splash h1 {
 		margin-top: 70px;
@@ -139,9 +287,6 @@ Splash
 		font-size: 46px;
 	}
 
-	#splash > .container-fluid > .row > #play {
-		margin-top: 42px;
-	}
 }
 
 @media (min-width: 992px) {
@@ -153,93 +298,6 @@ Splash
 	#splash h2 {
 		font-size: 64px;
 	}
-
-	#splash > .container-fluid > .row > #play {
-		margin-top: 54px;
-	}
-}*/
-
-/*
---------------------------------------------------------------
-Nav Affix
---------------------------------------------------------------
-*/
-
-header {
-    position: fixed;
-	color: #000000;
-	top: 0;
-	width: 100%;
-	border-bottom: 0;
-    z-index: 999;
-    
-    /* light box shadow for nav-affix */
-	-webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow:    0px 3px 5px 0px rgba(0, 0, 0, 0.3);
-	box-shadow:         0px 3px 5px 0px rgba(0, 0, 0, 0.3);
-}
-
-.navbar-default {
-	background-color: rgba(255, 255, 255, 0.97);
-	border: 0;
-}
-
-@media (min-width: 768px) {
-
-    .navbar {
-        border-radius: 0;
-        margin-bottom: 0;
-        border: 0;
-        min-height: 60px;
-    }
-
-    .navbar-default .navbar-brand {
-        color: #000000;
-    }
-
-    .navbar-brand {
-        padding: 20px 15px 20px 15px;
-        font-size: 26px;
-        height: 60px;
-    }
-
-    .navbar-default .navbar-brand:hover,
-    .navbar-default .navbar-brand:focus {
-        color: #af0606;
-    }
-}
-
-
-.navbar-default .navbar-nav > li > a {
-    color: #000000;
-    font-size: 20px;
-    padding: 20px 15px 20px 15px;
-    font-weight: 300;
-    border-bottom: 7px solid transparent;
-}
-
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus {
-	color: #af0606;
-}
-
-/* Active effect of scrollspy */
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-	background-color: transparent;
-	color: #af0606;
-	border-bottom: 7px solid #af0606;
-
-	transition: all 0.3s linear;
-	-moz-transition: all 0.3s linear;
-	-o-transition: all 0.3s linear;
-	-webkit-transition: all 0.3s linear;
-	}
-
-.navbar-toggle {
-	margin-top: 13px;
-	margin-bottom: 13px;
 }
 
 /*
@@ -248,33 +306,13 @@ The Idea
 --------------------------------------------------------------
 */
 
-.feature {
-	/*border-radius: 4px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	-ms-border-radius: 4px;
-	-o-border-radius: 4px;*/
-
-	padding: 3px 10px;
-
-	transition: all 0.2s linear;
-	-webkit-transition: all 0.2s linear;
-	-moz-transition: all 0.2s linear;
-	-ms-transition: all 0.2s linear;
-	-o-transition: all 0.2s linear;
-}
-
-.feature p {
-	font-size: 22px;
-}
-
 #idea .container>#smv-video.row {
 	margin-top: 30px;
 }
 
 #smv-video source {
-    max-width:100%;
-    height: auto;
+	max-width:100%;
+	height: auto;
 }
 
 #smv-video h1 {
@@ -292,7 +330,13 @@ The Idea
 }
 
 #smv-video .panel-group {
-	margin-top: 6px;
+	margin: 3px 0 0 0;
+}
+
+@media (min-width: 1200px) {
+	#idea-features {
+		min-height: 445px;
+	}
 }
 
 /*
@@ -303,8 +347,8 @@ Research Splash
 
 #research-splash {
 	width: 100%;
-	padding: 180px 0 180px 0;
-	background: url('../img/people-splash.jpg') 50% 0 fixed;
+	padding: 320px 0 0 0;
+	background: url('../img/research-bg.jpg') 50% 0 fixed;
 	background-size: cover;
 }
 
@@ -331,8 +375,8 @@ People Splash
 
 #people-splash {
 	width: 100%;
-	padding: 180px 0 180px 0;
-	background: url('../img/people-splash.jpg') 50% 0 fixed;
+	padding: 320px 0 0 0;
+	background: url('../img/team-bg.jpg') 50% 0 fixed;
 	background-size: cover;
 }
 
@@ -383,8 +427,8 @@ Contact Splash
 
 #contact-splash {
 	width: 100%;
-	padding: 180px 0 180px 0;
-	background: url('../img/contact-splash.jpg') 50% 0 fixed;
+	padding: 320px 0 0 0;
+	background: url('../img/raleigh-skyline.jpg') 50% 0 fixed;
 	background-size: cover;
 }
 
@@ -421,7 +465,7 @@ footer ul>li>a:focus {
 
 footer h3 {
 	padding-bottom: 3px;
-	color: #af0606;
+	color: #881621;
 	border-bottom: 1px solid #ffffff;
 }
 
