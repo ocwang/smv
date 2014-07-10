@@ -27,3 +27,6 @@ $(window).scroll(function() {
 		$("header").removeClass("solid-header");
 	}
 });
+
+
+document.createElement("section"); // Fix bc IE can't render section tag
