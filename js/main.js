@@ -1,38 +1,24 @@
-/*
-$(document).ready(function(){
-		var splashHeight = $(window).height() - $('#nav-affix').height();
-		$('#new-splash').css("height", splashHeight);
-		$('#nav-affix').affix({
-				offset: {
-						top: $(window).height()
-				}
-		});
-});
-*/
-
-jQuery.event.add(window, "load", resizeFrame);
-jQuery.event.add(window, "resize", resizeFrame);
-
-function resizeFrame()
-{
-	var h = $(window).height();
-	$("#splash").css('height', h);
-}
-
-//jQuery to collapse the navbar on scroll
-$(window).scroll(function() {
-	if ($(".navbar").offset().top > 65) {
-		$("header").addClass("solid-header");
-	} else {
-		$("header").removeClass("solid-header");
-	}
-});
-
 
 document.createElement("section"); // Fix bc IE can't render section tag
 
+$(window).on({
+	load:function(){
+		calculateHeaderBackground();
+		resizeSplash();
+	},
+	resize:function(){
+		calculateHeaderBackground();
+		resizeSplash();
+	},
+	scroll:function(){
+		calculateHeaderBackground();
+	}
+});
+
 $(document).ready(function(){
 		var $window = $(window);
+
+		// If initial window size is larger than tablet
 		if( $window.width() > 768){
 			$('section[data-type="background"]').each(function(){
 		    var $bgobj = $(this); // assigning the object
@@ -49,3 +35,25 @@ $(document).ready(function(){
 		  })
 		}
 });
+
+// Resize Splash div to match window size
+function resizeSplash() {
+	var h = $(window).height();
+	$("#splash").css('height', h);
+}
+
+// Gives header solid background on mobile and tablet devices
+function calculateHeaderBackground() {
+	if( $(window).width() > 768){
+		if ($(".navbar").offset().top > 65) {
+			$("header").addClass("solid-header");
+		} else {
+			$("header").removeClass("solid-header");
+		}
+	} else {
+		$('header').addClass("solid-header");
+	}
+}
+
+
+

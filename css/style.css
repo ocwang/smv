@@ -122,6 +122,7 @@ Misc.
 .section-lead p {
 	font-size: 20px;
 	font-weight: 300;
+	margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -306,9 +307,7 @@ The Idea
 --------------------------------------------------------------
 */
 
-#idea .container>#smv-video.row {
-	margin-top: 30px;
-}
+
 
 #smv-video source {
 	max-width:100%;
@@ -333,6 +332,12 @@ The Idea
 	margin: 3px 0 0 0;
 }
 
+@media (min-width: 768px) {
+	#idea .container>#smv-video.row {
+		margin-top: 20px;
+	}
+}
+
 @media (min-width: 1200px) {
 	#idea-features {
 		min-height: 445px;
@@ -347,10 +352,16 @@ Research Splash
 
 #research-splash {
 	width: 100%;
-	padding: 320px 0 0 0;
-	background: url('../img/research-bg.jpg') 50% 0 fixed; min-height: 320px;
+	padding-top: 225px;
+	background: url('../img/research-bg.jpg') 50% 0 fixed;
 	background-size: cover;
 	border-bottom: 0;
+}
+
+@media (min-width: 768px) {
+	#research-splash {
+		padding-top: 320px;
+	}
 }
 
 /*
@@ -370,11 +381,11 @@ The Research
 
 #research .btn {
 	border-radius: 0;
+
+  font-weight: 300;
 	color: #ffffff;
   background-color: #881621;
   border-color: #881621;
-  font-weight: 300;
-
   transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
@@ -387,19 +398,22 @@ The Research
 @media (min-width: 768px) {
 	#research .btn {
 		display: initial;
+		color: #000;
+		background-color: #fff;
+		border-color: #881621;
+	}
+
+	#research .btn:hover,
+	#research .btn:focus,
+	#research .btn:active,
+	#research .btn.active {
+		color: #ffffff;
+	  background-color: #881621;
+	  border-color: #881621;
 	}
 }
 
 
-
-#research .btn:hover,
-#research .btn:focus,
-#research .btn:active,
-#research .btn.active {
-  color: #000;
-  background-color: #fff;
-  border-color: #881621;
-}
 
 /*
 --------------------------------------------------------------
@@ -409,10 +423,16 @@ People Splash
 
 #people-splash {
 	width: 100%;
-	padding: 320px 0 0 0;
+	padding-top: 225px;
 	background: url('../img/team-bg.jpg') 50% 0 fixed;
 	background-size: cover;
 	border-bottom: 0;
+}
+
+@media (min-width: 768px) {
+	#people-splash {
+		padding-top: 320px;
+	}
 }
 
 
@@ -476,10 +496,16 @@ Contact Splash
 
 #contact-splash {
 	width: 100%;
-	padding: 320px 0 0 0;
+	padding-top: 225px;
 	background: url('../img/raleigh-skyline.jpg') 50% 0 fixed;
 	background-size: cover;
 	border-bottom: 0;
+}
+
+@media (min-width: 768px) {
+	#contact-splash {
+		padding-top: 320px;
+	}
 }
 
 /*
