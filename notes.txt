@@ -1,0 +1,14 @@
+
+
+
+
+Add anchor for idea section []
+finish splash[]
+check compatibility across different browsers
+make research images smaller [x]
+Implement parallax on background images while scrolling [x]
+create click through button[x]
+make img and header text links for research section []
+create modal on click through link
+the people mobile[x]
+mobile header at top []

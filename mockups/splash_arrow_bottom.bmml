@@ -1,0 +1,85 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1200" measuredH="791" mockupW="1200" mockupH="791">
+  <controls>
+    <control controlID="11" controlTypeID="__group__" x="0" y="0" w="1200" h="791" measuredW="1200" measuredH="791" zOrder="0" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="9" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="0" y="0" w="1200" h="791" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="11">
+          <controlProperties>
+            <text>Strategic%20Motion%20-%20When%20Video%20Talks%20Back%0Ahttp%3A//strategicmotion.com</text>
+          </controlProperties>
+        </control>
+        <control controlID="11" controlTypeID="__group__" x="15" y="90" w="1170" h="32" measuredW="1170" measuredH="32" zOrder="1" locked="false" isInGroup="11">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="__group__" x="793" y="10" w="377" h="22" measuredW="377" measuredH="22" zOrder="0" locked="false" isInGroup="11">
+              <controlProperties>
+                <controlName>Nav</controlName>
+              </controlProperties>
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="com.balsamiq.mockups::Link" x="0" y="0" w="-1" h="-1" measuredW="66" measuredH="22" zOrder="0" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <size>16</size>
+                    <text>The%20Idea</text>
+                    <underline>false</underline>
+                  </controlProperties>
+                </control>
+                <control controlID="1" controlTypeID="com.balsamiq.mockups::Link" x="81" y="0" w="-1" h="-1" measuredW="101" measuredH="22" zOrder="1" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <size>16</size>
+                    <text>The%20Research</text>
+                    <underline>false</underline>
+                  </controlProperties>
+                </control>
+                <control controlID="2" controlTypeID="com.balsamiq.mockups::Link" x="197" y="0" w="-1" h="-1" measuredW="81" measuredH="22" zOrder="2" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <size>16</size>
+                    <text>The%20People</text>
+                    <underline>false</underline>
+                  </controlProperties>
+                </control>
+                <control controlID="3" controlTypeID="com.balsamiq.mockups::Link" x="293" y="0" w="-1" h="-1" measuredW="84" measuredH="22" zOrder="3" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <size>16</size>
+                    <text>Contact%20Us</text>
+                    <underline>false</underline>
+                  </controlProperties>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="1" controlTypeID="__group__" x="0" y="0" w="32" h="32" measuredW="32" measuredH="32" zOrder="1" locked="false" isInGroup="11">
+              <controlProperties>
+                <controlName>Header%20Logo</controlName>
+              </controlProperties>
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="com.balsamiq.mockups::Icon" x="0" y="0" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="0" locked="false" isInGroup="1">
+                  <controlProperties>
+                    <icon>SpinningIcon%7Cmedium</icon>
+                  </controlProperties>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="19" controlTypeID="__group__" x="336" y="275" w="528" h="445" measuredW="528" measuredH="445" zOrder="2" locked="false" isInGroup="11">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::Title" x="0" y="0" w="-1" h="-1" measuredW="528" measuredH="75" zOrder="0" locked="false" isInGroup="19">
+              <controlProperties>
+                <size>72</size>
+                <text>Strategic%20Motion</text>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::SubTitle" x="95" y="90" w="-1" h="-1" measuredW="339" measuredH="35" zOrder="1" locked="false" isInGroup="19">
+              <controlProperties>
+                <size>32</size>
+                <text>When%20Video%20Talks%20Back</text>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::Icon" x="232" y="381" w="-1" h="-1" measuredW="64" measuredH="64" zOrder="2" locked="false" isInGroup="19">
+              <controlProperties>
+                <icon>UpdateIcon%7Cxlarge</icon>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+  </controls>
+</mockup>
