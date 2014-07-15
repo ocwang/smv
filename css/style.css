@@ -259,7 +259,9 @@ Splash
 	color: #ffffff;
 }
 
-
+#splash-contact {
+	min-height: 400px;
+}
 
 #splash h1 {
 	font-size: 82px;
@@ -299,8 +301,20 @@ Splash
 	}
 }
 
-#arrow-down {
-	margin: 4px;
+
+
+#down-arrow {
+	width: 100%;
+
+	position: absolute;
+	bottom: 0;
+
+	z-index: 5;
+}
+
+#idea-anchor {
+	width: 100%;
+	min-height: 65px;
 }
 
 /*
