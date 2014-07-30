@@ -45,7 +45,7 @@ function resizeSplash() {
 // Gives header solid background on mobile and tablet devices
 function calculateHeaderBackground() {
 	if( $(window).width() > 768){
-		if ($(".navbar").offset().top > 65) {
+		if ($(".navbar").offset().top > 0) {
 			$("header").addClass("solid-header");
 		} else {
 			$("header").removeClass("solid-header");
