@@ -485,10 +485,16 @@ The People
 	padding: 15px;
 }
 
-.person {
-	margin-bottom: 7px;
+.person h3 {
+	margin: 7px 0 4px;
+	font-size: 20px;
 }
 
+.person h4 {
+	margin: 0 0 3px;
+	font-weight: 300;
+}
+/*
 #people .name h3 {
 	margin: 0;
 }
@@ -525,7 +531,7 @@ The People
 	#people .name {
 		padding: 0;
 	}
-}
+}*/
 
 /*
 --------------------------------------------------------------
