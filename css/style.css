@@ -494,44 +494,6 @@ The People
 	margin: 0 0 3px;
 	font-weight: 300;
 }
-/*
-#people .name h3 {
-	margin: 0;
-}
-
-@media (min-width: 768px) {
-	.person-pic img {
-		border-radius: 50%;
-	}
-	.person {
-		margin-bottom: 20px;
-	}
-
-	#people .name h3 {
-		margin: 20px 0 10px 0;
-	}
-}
-
-#people .person-pic img {
-	height: auto;
-	max-width: 100%;
-}
-
-@media (min-width: 992px) {
-	#people .person-pic {
-		padding: 0 10px 0 0;
-	}
-	#people .person-pic img {
-		height: 100px;
-		width: 100px;
-	}
-	#people .name h3 {
-		margin: 0;
-	}
-	#people .name {
-		padding: 0;
-	}
-}*/
 
 /*
 --------------------------------------------------------------
@@ -603,6 +565,8 @@ Misc.
 	width: 72px;
 	height: 33px;
 	background-image: url('../img/smv-scroller-arrow.png');
+	background-position: center center;
+	background-repeat: no-repeat;
 	background-size: cover;
 	display: block;
 	margin: 0 auto;
