@@ -1,0 +1,90 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1260" measuredH="605" mockupW="1250" mockupH="597">
+  <controls>
+    <control controlID="14" controlTypeID="__group__" x="10" y="8" w="945" h="284" measuredW="945" measuredH="284" zOrder="1" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="230" h="230" measuredW="77" measuredH="79" zOrder="0" locked="false" isInGroup="14">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="238" y="0" w="230" h="230" measuredW="77" measuredH="79" zOrder="1" locked="false" isInGroup="14">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Image" x="477" y="0" w="230" h="230" measuredW="77" measuredH="79" zOrder="2" locked="false" isInGroup="14">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Image" x="715" y="0" w="230" h="230" measuredW="77" measuredH="79" zOrder="3" locked="false" isInGroup="14">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Title" x="248" y="240" w="-1" h="-1" measuredW="210" measuredH="23" zOrder="4" locked="false" isInGroup="14">
+          <controlProperties>
+            <size>20</size>
+            <text>Robert%20J.%20Fornaro%2C%20PH.D.</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Title" x="52" y="240" w="-1" h="-1" measuredW="126" measuredH="23" zOrder="5" locked="false" isInGroup="14">
+          <controlProperties>
+            <size>20</size>
+            <text>Erwin%20Aguayo</text>
+          </controlProperties>
+        </control>
+        <control controlID="6" controlTypeID="com.balsamiq.mockups::Title" x="761" y="240" w="-1" h="-1" measuredW="139" measuredH="23" zOrder="6" locked="false" isInGroup="14">
+          <controlProperties>
+            <size>20</size>
+            <text>Oscar%20C.%20Wang</text>
+          </controlProperties>
+        </control>
+        <control controlID="7" controlTypeID="com.balsamiq.mockups::Title" x="504" y="240" w="-1" h="-1" measuredW="177" measuredH="23" zOrder="7" locked="false" isInGroup="14">
+          <controlProperties>
+            <size>20</size>
+            <text>Ignacio%20Dominguez</text>
+          </controlProperties>
+        </control>
+        <control controlID="8" controlTypeID="com.balsamiq.mockups::Label" x="46" y="263" w="-1" h="-1" measuredW="138" measuredH="21" zOrder="8" locked="false" isInGroup="14">
+          <controlProperties>
+            <text>Chief%20Executive%20Officer</text>
+          </controlProperties>
+        </control>
+        <control controlID="9" controlTypeID="com.balsamiq.mockups::Label" x="284" y="263" w="-1" h="-1" measuredW="128" measuredH="21" zOrder="9" locked="false" isInGroup="14">
+          <controlProperties>
+            <text>Chief%20Science%20Officer</text>
+          </controlProperties>
+        </control>
+        <control controlID="10" controlTypeID="com.balsamiq.mockups::Label" x="772" y="263" w="-1" h="-1" measuredW="116" measuredH="21" zOrder="10" locked="false" isInGroup="14">
+          <controlProperties>
+            <text>Full-Stack%20Engineer</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Image" x="1030" y="52" w="230" h="230" measuredW="77" measuredH="79" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Title" x="1040" y="292" w="-1" h="-1" measuredW="210" measuredH="23" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>20</size>
+        <text>Robert%20J.%20Fornaro%2C%20PH.D.</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Label" x="1040" y="315" w="-1" h="-1" measuredW="138" measuredH="21" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <text>Chief%20Science%20Officer</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::Canvas" x="1030" y="279" w="230" h="326" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="-1"/>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::Paragraph" x="1040" y="340" w="200" h="254" measuredW="275" measuredH="80" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Dr.%20Fornaro%20Professor%20Emeritus%20at%20North%20Carolina%20State%20University%20is%20the%20recipient%20of%20the%20IEEE%20Computer%20Science%20Society%202013%20Computer%20Science%20%26%20Engineering%20Undergraduate%20Teaching%20Award.%20%20He%20oversaw%20three%20NCSU%20student%20teams%20in%20the%20IEEE%20Computer%20Society%u2019s%20International%20Design%20Competition%2C%20winning%20first%20place%20twice%20and%20third%20place%20once.%20%20This%20was%20the%20first%20and%20only%20time%20in%20the%20history%20of%20CSIDC%20that%20students%20from%20any%20university%20in%20the%20world%20placed%20first%20in%20the%20competition%20two%20consecutive%20years.</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
