@@ -444,13 +444,17 @@ The Research
 	#research .btn {
 		display: initial;
 	}
+<<<<<<< HEAD
 }
+=======
+>>>>>>> f834b9fcc9b72b3f4350af6989c347d2bb9f1030
 
 	/* #research .btn:hover,
 	#research .btn:focus,
 	#research .btn:active,
 	#research .btn.active {
 	} */
+<<<<<<< HEAD
 
 .research-article-img {
 	overflow: hidden;
@@ -458,6 +462,12 @@ The Research
 	height: 400px;
 }
 
+=======
+}
+
+
+
+>>>>>>> f834b9fcc9b72b3f4350af6989c347d2bb9f1030
 /*
 --------------------------------------------------------------
 People Splash
