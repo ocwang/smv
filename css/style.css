@@ -444,15 +444,19 @@ The Research
 	#research .btn {
 		display: initial;
 	}
+}
 
 	/* #research .btn:hover,
 	#research .btn:focus,
 	#research .btn:active,
 	#research .btn.active {
 	} */
+
+.research-article-img {
+	overflow: hidden;
+	width: 100%;
+	height: 400px;
 }
-
-
 
 /*
 --------------------------------------------------------------
